@@ -166,6 +166,13 @@ namespace Hmu {
   }
   // example: 3108b51a0405ff3223 / 0aff083500000000000000
 
+  @inherit(r_2)
+  @ext(0x22)
+  model SourceTempInput {
+    @unit("°C")
+    value: D2C;
+  }
+
   /** current yielded energy from the environment */
   @inherit(r_2)
   @ext(0x23)
